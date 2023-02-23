@@ -85,7 +85,7 @@ body {
   justify-content: space-between;
   text-align: center;
   height: 110vh;
-  /* width: 203.9vh; */
+  ;max-width: 1550px;
   top: 0;
   left: 0;
   margin: 0;
@@ -395,6 +395,9 @@ body {
 }
 
 /* ----------OUR PARTNER COMPANIES---------- */
+.our-partners{
+  margin-bottom: 150px;
+}
 .partner-heading{
   position: relative;
   text-align: center;
@@ -420,6 +423,132 @@ body {
 .partner-icons div img{
   height: 75px;
   margin: 20px;
+}
+
+/* ----------FOOTER----------- */
+.footer{
+  position: relative;
+  height: 40vh;
+  width: 1550px;
+  background-color: #252525;
+  bottom: 0;
+  left: 0;
+  margin-top: 100px;
+}
+
+.mail-box{
+  position: absolute;
+  display: flex;
+  max-width: 80%;
+  min-height: 20vh;
+  background-color: #000000;
+  background-image: url(assets/mail-box.jpg);
+  background-size: cover;
+  left: 17.5%;
+  top: -40%;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.mail-box h3{
+  color: #FFF;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 20px 40px;
+}
+
+.mail-box div{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  margin: 20px 40px;
+}
+
+.mail-box div input {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 20px;
+  color: #000000;
+  border: none;
+  outline: none;
+}
+
+  .footer-content{
+  display: flex;
+  background-color: #252525;
+  height: 50%;
+  width: 100%;
+  padding: 6% 0 2.5% 19%;
+}
+
+.content-1{
+  margin: 0 10px;
+  max-width: 30%;
+  color: #FFF;
+}
+ 
+.content-1 p{
+  color: #D9D9D9;
+  font-size: 12px;
+}
+
+.content-2{
+  max-width: 30%;
+  color: #FFF;
+  margin: 0 10px;
+}
+
+.content-2 h3{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.content-2  span {
+  display:  flex;
+  align-items: center;
+}
+
+.content-2  span i {
+  color: #ff6058;
+  margin: 5px;
+}
+
+.content-2  span p {
+  color: #D9D9D9;
+  font-size: 12px;
+  margin: 5px;
+}
+
+.content-3 {
+  max-width: 30%;
+  color: #FFF;
+  margin: 0 10px;
+}
+
+.content-3 h3{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.content-3 ul li{
+  list-style: none;
+}
+
+.content-3 ul li a{
+  text-decoration: none;
+  color: #D9D9D9;
+  font-size: 12px;
+  transition: 0.3s ease;
+}
+
+.content-3 ul li a:hover{
+  color: #d94f48;
+  font-weight: 500;
 }
 
 
