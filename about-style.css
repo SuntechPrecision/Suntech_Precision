@@ -78,15 +78,15 @@ body {
 
 /* ----------HEADER---------- */
 #header {
-  background-color: #FFF;
-  background-image: url(assets/contact.jpg);
-  background-position: 0 800px;
+  background-color: #fff;
+  background-image: url(assets/about.jpg);
+  background-position: center;
   background-size: cover;
   display: block;
   justify-content: space-between;
   text-align: center;
   height: 50vh;
-  ;max-width: 1550px;
+  max-width: 1550px;
   top: 0;
   left: 0;
   margin: 0;
@@ -132,6 +132,14 @@ body {
   transition: 0.3s ease;
 }
 
+/* .active {
+  color: #f05d56;
+  text-underline-offset: 10px;
+  text-decoration: underline;
+  text-decoration-color: #f05d56;
+} */
+
+.navbar-menu li a:hover,
 .active {
   color: #f05d56;
   text-underline-offset: 10px;
@@ -139,185 +147,126 @@ body {
   text-decoration-color: #f05d56;
 }
 
-.navbar-menu li a:hover {
-  color: #f05d56;
-  text-underline-offset: 10px;
-  text-decoration: underline;
-  text-decoration-color: #f05d56;
-}
-
-#header h2{
+#header h2 {
   position: relative;
   top: 25%;
   right: 32.5%;
   font-size: 60px;
   font-weight: 600;
-  color: #FFF;
+  color: #fff;
 }
 
-/* ----------CONTACT INFORMATION---------- */
-#contact-info {
-  text-align: center;
-  margin: 50px 0;
-}
-
-.get-in-touch h2{
-  font-size: 40px;
-  font-weight: 600;
-}
-
-.contact-card{
+/* ----------OFFER---------- */
+#offer {
   display: flex;
-  justify-content: space-around;
-  padding: 0 2.5%;
+  justify-content: space-between;
+  padding: 10% 10% 5% 10%;
 }
 
-.phone {
-  max-width: 30%;
-  text-align: center;
-}
-
-.contact-card div i {
-  font-size: 40px;
+.left p:nth-child(1) {
+  font-size: 20px;
+  font-weight: 600;
   color: #ff6058;
 }
 
-
-.contact-card div h4 {
-  font-size: 20px;
-  font-weight: 500;
+.left h2 {
+  font-weight: 600;
 }
 
-.phone span {
-  font-size: 14px;
-  font-weight: 500;
-  display: flex;
+.left p:nth-child(3) {
+  font-size: 15px;
+  color: #404040;
+}
+
+.left ul li {
+  list-style: none;
+  color: #404040;
+  font-size: 15px;
   align-items: center;
 }
 
-.phone span p {
-  font-size: 14px;
-  font-weight: 300;
-  margin: 5px;
+.left ul li i {
+  font-size: 18px;
+  color: #ff6058;
 }
 
-.phone p {
-  font-size: 14px;
-  font-weight: 300;
-  margin: 0;
+.left button {
+  margin: 20px 0;
 }
 
-.address {
-  max-width: 30%;
+.right {
+  min-width: 50%;
+  text-align: center;
+  align-self: center;
 }
 
-.address p{
-  font-size: 14px;
-  font-weight: 300;
-  margin: 5px;
+.right img {
+  height: 357px;
+  width: 550px;
+  object-fit: cover;
+  border-radius: 30px 5px 30px 5px;
 }
 
-.email {
-  max-width: 30%;
-}
-
-.email p {
-  font-size: 14px;
-  font-weight: 300;
-  margin: 5px;
-}
-
-/* ----------EMAIL FORM---------- */
-.email-form {
-  height: 170vh;
-}
-
-.form-background {
-  background-image: url(assets/contact-girl.jpg);
-  background-size: cover;
-  background-position: center;
-  min-height: 70vh;
-  padding: 25vh;
-}
-
-.form-background h2 {
-  color: #FFF;
-  font-weight: 600;
-  max-width: 50%;
-}
-
-.form-background p {
-  color: #FFF;
-  max-width: 50%;
-  font-size: 14px;
-}
-
-.form {
-  position: absolute;
-  max-width: 150vh;
-  max-height: 75vh;
-  bottom: -150%;
-  left: 17%;
-  box-shadow: 0px 0px 10px #00000080;
+/* ----------SKILLS---------- */
+#skills {
   display: flex;
-  background-color: #FFF;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10% 10% 5% 10%;
+  align-items: center;
+}
+
+.skills-left img {
+  height: 357px;
+  width: 550px;
+  object-fit: cover;
+  border-radius: 5px 30px 5px 30px;
+}
+
+.skills-right {
   padding: 50px;
-  border-radius: 8px;
 }
 
-.form-content form p{
+.skills-right p:nth-child(1) {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ff6058;
+}
+
+.skills-right h2 {
+  font-weight: 600;
+}
+
+.skills-right p:nth-child(3) {
+  font-size: 15px;
+  color: #404040;
+}
+
+/* ----------OUR TEAM---------- */
+#our-team {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#our-team h2 {
+  font-weight: 600;
+}
+
+#our-team p {
   font-size: 14px;
-  color: #252525;
-  margin: 10px 0 5px 0;
+  color: #404040;
 }
 
-.form-content form {
+#our-team div {
   display: flex;
-  flex-direction: column;
-  width: 400px;
-  margin: 0 50px 0 0;
+  justify-content: space-between;
+  margin: 5% 0;
 }
 
-.form-content form input {
-  font-size: 14px;
-  padding: 10px;
-  color: #000000;
-  border: none;
-  border-bottom: 1px solid #8C8C8C;
-  outline: none;
-  min-width: 300px;
+#our-team div img {
+  width: 47.5%;
+  border-radius: 10px;
 }
-
-.form-content form textarea {
-  font-size: 14px;
-  padding: 10px;
-  color: #000000;
-  border: none;
-  border-bottom: 1px solid #8C8C8C;
-  outline: none;
-  min-width: 300px;
-}
-
-.form-content form button {
-  font-size: 16px;
-  font-weight: 400;
-  width: 400px;
-  padding: 10px 40px;
-  color: #fff;
-  background-color: #ff6058;
-  border-radius: 5px;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  transition: 0.5s ease;
-  margin: 40px 0;
-}
-
-.map iframe {
-  height: 475px;
-  width: 475px;
-}
-
 
 /* ----------FOOTER----------- */
 .footer{
@@ -373,6 +322,7 @@ body {
   border: none;
   outline: none;
   border-radius: 2px 0 0 2px;
+  
 }
 
 .subscribe-button {
