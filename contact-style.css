@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* ----------GLOBAL STYLING---------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 64px;
+  color: #000000;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  font-weight: 400;
+  color: #000000;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+  color: #000000;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+button.normal {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 40px;
+  color: #fff;
+  background-color: #ff6058;
+  border-radius: 2px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.5s ease;
+}
+
+button.normal:hover {
+  background-color: #d94f48;
+}
+
+body {
+  width: 100%;
+  background-color: #fff;
+}
+
+/* ----------HEADER---------- */
+#header {
+  background-color: #FFF;
+  background-image: url(assets/contact.jpg);
+  background-position: 0 800px;
+  background-size: cover;
+  display: block;
+  justify-content: space-between;
+  text-align: center;
+  height: 50vh;
+  ;max-width: 1550px;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+.navbar {
+  padding: 20px 17.5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-title {
+  display: flex;
+  align-items: center;
+}
+
+.title-name {
+  padding: 0 7.5px;
+  font-weight: 600;
+  color: #fefefe;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-menu li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+.navbar-menu li a {
+  color: #fefefe;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  transition: 0.3s ease;
+}
+
+.active {
+  color: #f05d56;
+  text-underline-offset: 10px;
+  text-decoration: underline;
+  text-decoration-color: #f05d56;
+}
+
+.navbar-menu li a:hover {
+  color: #f05d56;
+  text-underline-offset: 10px;
+  text-decoration: underline;
+  text-decoration-color: #f05d56;
+}
+
+#header h2{
+  position: relative;
+  top: 25%;
+  right: 32.5%;
+  font-size: 60px;
+  font-weight: 600;
+  color: #FFF;
+}
+
+/* ----------CONTACT INFORMATION---------- */
+#contact-info {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.get-in-touch h2{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.contact-card{
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10%;
+}
+
+.phone {
+  max-width: 30%;
+  text-align: center;
+}
+
+.contact-card div i {
+  font-size: 40px;
+  color: #ff6058;
+}
+
+.contact-card div h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.phone span {
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.phone span p {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 5px;
+}
+
+.phone p {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.address {
+  max-width: 30%;
+}
+
+.address p{
+  font-size: 14px;
+  font-weight: 300;
+  margin: 5px;
+}
+
+.email {
+  max-width: 30%;
+}
+
+.email p {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 5px;
+}
+
+/* ----------EMAIL FORM---------- */
+.email-form {
+  min-height: 150vh;
+}
+
+.form-background {
+  background-image: url(assets/contact-girl.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh;
+  padding: 25vh;
+}
+
+.form-background h2 {
+  color: #FFF;
+  font-weight: 600;
+  max-width: 50%;
+}
+
+.form-background p {
+  color: #FFF;
+  max-width: 50%;
+  font-size: 14px;
+}
+
+.form {
+  position: absolute;
+  max-width: 150vh;
+  max-height: 75vh;
+  bottom: -135%;
+  left: 10%;
+  box-shadow: 0px 0px 10px #00000080;
+  display: flex;
+  background-color: #FFF;
+  padding: 50px;
+  border-radius: 8px;
+}
+
+.form-content form p{
+  font-size: 14px;
+  color: #252525;
+  margin: 10px 0 5px 0;
+}
+
+.form-content form input {
+  font-size: 14px;
+  padding: 10px;
+  color: #000000;
+  border: none;
+  border-bottom: 1px solid #8C8C8C;
+  outline: none;
+  min-width: 300px;
+}
+
+.form-content form textarea {
+  font-size: 14px;
+  padding: 10px;
+  color: #000000;
+  border: none;
+  border-bottom: 1px solid #8C8C8C;
+  outline: none;
+  min-width: 300px;
+}
+
+.form-content form button {
+  font-size: 16px;
+  font-weight: 400;
+  min-width: 300px;
+  padding: 10px 40px;
+  color: #fff;
+  background-color: #ff6058;
+  border-radius: 2px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.5s ease;
+  margin: 20px 0;
+}
+
+
+/* ----------FOOTER----------- */
+.footer{
+  position: relative;
+  height: 40vh;
+  width: 1550px;
+  background-color: #252525;
+  bottom: 0;
+  left: 0;
+  margin-top: 100px;
+}
+
+.mail-box{
+  position: absolute;
+  display: flex;
+  max-width: 80%;
+  min-height: 20vh;
+  background-color: #000000;
+  background-image: url(assets/mail-box.jpg);
+  background-size: cover;
+  left: 17.5%;
+  top: -40%;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.mail-box h3{
+  color: #FFF;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 20px 40px;
+}
+
+.mail-box div{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  margin: 20px 40px;
+}
+
+.mail-box div input {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 20px;
+  color: #000000;
+  border: none;
+  outline: none;
+  
+}
+
+  .footer-content{
+  display: flex;
+  background-color: #252525;
+  height: 50%;
+  width: 100%;
+  padding: 6% 0 2.5% 19%;
+}
+
+.content-1{
+  margin: 0 10px;
+  max-width: 30%;
+  color: #FFF;
+}
+ 
+.content-1 p{
+  color: #D9D9D9;
+  font-size: 12px;
+}
+
+.content-2{
+  max-width: 30%;
+  color: #FFF;
+  margin: 0 10px;
+}
+
+.content-2 h3{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.content-2  span {
+  display:  flex;
+  align-items: center;
+}
+
+.content-2  span i {
+  color: #ff6058;
+  margin: 5px;
+}
+
+.content-2  span p {
+  color: #D9D9D9;
+  font-size: 12px;
+  margin: 5px;
+}
+
+.content-3 {
+  max-width: 30%;
+  color: #FFF;
+  margin: 0 10px;
+}
+
+.content-3 h3{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.content-3 ul li{
+  list-style: none;
+}
+
+.content-3 ul li a{
+  text-decoration: none;
+  color: #D9D9D9;
+  font-size: 12px;
+  transition: 0.3s ease;
+}
+
+.content-3 ul li a:hover{
+  color: #d94f48;
+  font-weight: 500;
+}
