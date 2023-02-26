@@ -12,30 +12,37 @@
 </head>
 
 <body>
-    <section id="header">
-        <div class="navbar">
-            <div class="navbar-title">
+    <header>
+        <div class="container">
+            <div class="navbar-logo">
                 <img src="assets/logo.png" alt="">
             </div>
-            <div>
-                <ul class="navbar-menu">
-                    <li><a id = 'active' href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div>
+            <nav class="navbar">
+                <a class='active' href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact</a>
                 <button class="normal">Get A Quote</button>
-            </div>
+            </nav>
+            <button class="hamburger">
+                <div class="bar"></div>
+            </button>
+            <nav class="mobile-nav">
+                <a class='active' href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
-        <div class="header-content">
-            <h1>We are an AS 9100 Rev D & ISO 9001:2015 Certified company.</h1>
-            <p>Our goal is to have a greater number of customers with the best manufacturing solution.</p>
-            <button class="header-button">Contact Us Today</button>
-        </div>
-        <div class="triangle"></div>
-    </section>
+        <section id="header">
+            <div class="header-content">
+                <h1>We are an AS 9100 Rev D & ISO 9001:2015 Certified company.</h1>
+                <p>Our goal is to have a greater number of customers with the best manufacturing solution.</p>
+                <button class="header-button">Contact Us Today</button>
+            <!-- </div>
+            <div class="triangle"></div> -->
+        </section>
+    </header>
     <section class="remarkable-services">
         <div class="remarkable-left">
             <div class="card">
@@ -152,8 +159,8 @@
         </div>
         <div class="partner-icons">
             <div><img src="assets/alpha.jpg" alt=""></div>
-            <div><img src="assets/dcx.jpg" alt=""></div>
             <div><img src="assets/mim.png" alt=""></div>
+            <div><img src="assets/dcx.jpg" alt=""></div>
             <div><img src="assets/triveni.jpg" alt=""></div>
         </div>
     </section>
