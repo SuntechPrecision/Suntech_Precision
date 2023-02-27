@@ -77,53 +77,34 @@ body {
 }
 
 /* ----------HEADER---------- */
-#header {
+header {
   background-color: #fff;
   background-image: url(assets/about.jpg);
-  background-position: center;
   background-size: cover;
-  display: block;
-  justify-content: space-between;
-  text-align: center;
-  height: 50vh;
-  max-width: 1550px;
-  top: 0;
-  left: 0;
-  margin: 0;
+  background-position: center;
 }
 
-.navbar {
-  padding: 20px 200px;
-  display: flex;
+.container {
+  width: 100%;
+  max-width: 1600px;
+  padding: 30px 0 0 0;
+  padding-left: 128px;
+  padding-right: 128px;
   justify-content: space-between;
-  align-items: center;
-}
-
-.navbar-title {
   display: flex;
   align-items: center;
 }
 
-.navbar-title img {
+.navbar-logo img {
   height: 60px;
   border-radius: 50%;
   padding: 10px;
   background-color: #fff;
 }
 
-.navbar-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.navbar-menu li {
-  list-style: none;
-  padding: 0 20px;
+.navbar a {
+  padding: 0 10px;
   position: relative;
-}
-
-.navbar-menu li a {
   color: #fefefe;
   text-decoration: none;
   font-size: 16px;
@@ -131,25 +112,55 @@ body {
   transition: 0.3s ease;
 }
 
-.navbar-menu li a:hover {
+.navbar a:hover {
   color: #f05d56;
   text-underline-offset: 10px;
   text-decoration: underline;
   text-decoration-color: #f05d56;
 }
 
-.navbar-menu li a.active {
+.navbar a.active {
   color: #f05d56;
   text-underline-offset: 10px;
   text-decoration: underline;
   text-decoration-color: #f05d56;
 }
 
-#header h2 {
-  position: relative;
-  top: 25%;
-  right: 32.5%;
-  font-size: 60px;
+.navbar button {
+  margin-left: 20px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+#header {
+  display: block;
+  justify-content: space-between;
+  text-align: center;
+  height: 300px;
+  max-width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+.header-content {
+  width: 100%;
+  padding: 0 40vh;
+  text-align: start;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.header-content h2 {
+  font-size: 50px;
   font-weight: 600;
   color: #fff;
 }
