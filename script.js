@@ -6,8 +6,4 @@ window.onload = function () {
         menu_btn.classList.toggle('is-active');
         menu_list.classList.toggle('is-active');
     });
-
-    // menu_list.addEventListener('click', function() {
-    //     menu_list.classList.toggle('is-active');
-    // });
 }
