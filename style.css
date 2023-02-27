@@ -304,13 +304,13 @@ header {
 }
 
 .card .face h4 {
-  font-size: 16px;
+  font-size: 14px;
   transform: perspective(500px) translateZ(50px);
 }
 
 .card .back h4 {
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   transform: perspective(500px) translateZ(50px);
 }
 
@@ -775,7 +775,7 @@ header {
     top: 0;
     right: -100%;
     width: 25%;
-    height: 30%;
+    height: 40%;
     display: block;
     z-index: 98;
     background-color: #000000;
@@ -1300,11 +1300,6 @@ header {
     font-size: 14px;
   } */
 
-  .footer {
-    width: 100%;
-    bottom: 0;
-    left: 0;
-  }
 
   .footer-content {
     display: flex;
@@ -1793,8 +1788,8 @@ header {
 
   .card {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     transform-style: preserve-3d;
     box-shadow: 0 0 10px #d9d9d9;
     border-radius: 5px;
