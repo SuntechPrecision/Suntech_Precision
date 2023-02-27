@@ -12,25 +12,34 @@
 </head>
 
 <body>
-    <section id="header">
-        <div class="navbar">
-            <div class="navbar-title">
+    <header>
+        <div class="container">
+            <div class="navbar-logo">
                 <img src="assets/logo.png" alt="">
             </div>
-            <div>
-                <ul class="navbar-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a class="active" href="about.html">About Us</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a class='active' href="about.html">About Us</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact</a>
                 <button class="normal">Get A Quote</button>
-            </div>
+            </nav>
+            <button class="hamburger">
+                <div class="bar"></div>
+            </button>
+            <nav class="mobile-nav">
+                <a href="index.html">Home</a>
+                <a class='active' href="about.html">About Us</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
-        <h2>About Us</h2>
-    </section>
+        <section id="header">
+            <div class="header-content">
+                <h2>About Us</h2>
+            </div>
+        </section>
+    </header>
     <section id="offer" class="section-p1">
         <div class="left">
             <p>What we offer</p>
@@ -126,6 +135,7 @@
             </div>
         </div>
     </sectoin>
+    <script src="about_script.js"></script>
 </body>
 
 </html>
