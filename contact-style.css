@@ -1238,8 +1238,12 @@ header {
     transform: translate(-50%, -50%);
   }
 
+  .header-content h2 {
+    font-size: 40px;
+  }
+
   /* ----------CONTACT INFORMATION---------- */
-  .get-in-touch h2 {
+  /* .get-in-touch h2 {
     font-size: 28px;
     margin: 0;
   }
@@ -1247,11 +1251,50 @@ header {
   .contact-card {
     width: 350px;
     margin: 0 7.5%;
+  } */
+
+  .get-in-touch h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .get-in-touch p {
+    font-size: 14px;
+  }
+
+  .contact-card {
+    width: 300px;
+    margin: 0 5%;
+  }
+
+  .contact-card div h4 {
+    font-size: 18px;
+  }
+
+  .phone span {
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+  }
+  
+  .phone span p {
+    font-size: 12px;
+  }
+  
+  .phone p {
+    font-size: 12px;
+  }
+  .address p {
+    font-size: 12px;
+  }
+  .email p {
+    font-size: 12px;
   }
   /* ----------EMAIL FORM---------- */
   .email-form {
     height: 100vh;
-    margin-bottom: 625px;
+    margin-bottom: 650px;
   }
 
   .form-background {
@@ -1270,13 +1313,14 @@ header {
   }
 
   .form {
-    max-width: 350px;
+    max-width: 300px;
     width: 100%;
     max-height: 1000px;
-    bottom: -280%;
+    bottom: -270%;
     left: 8%;
     display: flex;
     flex-direction: column;
+    padding: 25px;
   }
 
   .form-content form {
@@ -1317,6 +1361,248 @@ header {
   .map iframe {
     height: 250px;
     width: 250px;
+  }
+  
+  /* ----------FOOTER----------- */
+  .footer {
+    position: relative;
+    height: 40vh;
+    width: 100%;
+    background-color: #252525;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #252525;
+    height: 50%;
+    width: 100%;
+    padding: 5%;
+    text-align: center;
+  }
+
+  .content-1 {
+    margin: 10px;
+    max-width: 100%;
+    color: #fff;
+  }
+
+  .content-1 p {
+    color: #d9d9d9;
+    font-size: 12px;
+  }
+
+  .content-2 {
+    max-width: 100%;
+    color: #fff;
+    margin: 10px;
+  }
+
+  .content-2 h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .content-2 span {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+
+  .content-2 span i {
+    color: #ff6058;
+    margin: 5px;
+  }
+
+  .content-2 span p {
+    color: #d9d9d9;
+    font-size: 12px;
+    margin: 5px;
+  }
+
+  .content-3 {
+    max-width: 100%;
+    color: #fff;
+    margin: 10px;
+  }
+
+  .content-3 h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .content-3 ul li {
+    list-style: none;
+  }
+
+  .content-3 ul li a {
+    text-decoration: none;
+    color: #d9d9d9;
+    font-size: 12px;
+    transition: 0.3s ease;
+  }
+
+  .content-3 ul li a:hover {
+    color: #d94f48;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 350px) {
+  body {
+    max-width: 350px;
+  }
+  /*----------HEADER----------*/
+  header {
+    background-position: center;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .navbar-logo img {
+    height: 50px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #fff;
+  }
+
+  .mobile-nav {
+    height: 35%;
+    width: 35%;
+    margin-top: 25%;
+  }
+
+  .mobile-nav.is-active {
+    right: 12%;
+  }
+
+  .header-content {
+    width: 100%;
+    padding: 0 40vh;
+    text-align: start;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* ----------CONTACT INFORMATION---------- */
+  .get-in-touch h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .get-in-touch p {
+    font-size: 14px;
+  }
+
+  .contact-card {
+    width: 300px;
+    margin: 0 5%;
+  }
+
+  .contact-card div h4 {
+    font-size: 18px;
+  }
+
+  .phone span {
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+  }
+  
+  .phone span p {
+    font-size: 12px;
+  }
+  
+  .phone p {
+    font-size: 12px;
+  }
+  .address p {
+    font-size: 12px;
+  }
+  .email p {
+    font-size: 12px;
+  }
+  /* ----------EMAIL FORM---------- */
+  .email-form {
+    height: 100vh;
+    margin-bottom: 625px;
+  }
+
+  .form-background {
+    padding: 50px;
+  }
+
+  .form-background h2 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .form-background p {
+    color: #fff;
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .form {
+    max-width: 290px;
+    width: 100%;
+    max-height: 1000px;
+    bottom: -272.5%;
+    left: 8%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-content form {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin: 0 50px 0 0;
+  }
+
+  .form-content form input {
+    font-size: 14px;
+    padding: 10px;
+    color: #000000;
+    border: none;
+    border-bottom: 1px solid #8c8c8c;
+    outline: none;
+    min-width: 200px;
+    width: 230px;
+    max-width: 230px;
+  }
+
+  .form-content form textarea {
+    font-size: 14px;
+    padding: 10px;
+    color: #000000;
+    border: none;
+    border-bottom: 1px solid #8c8c8c;
+    outline: none;
+    min-width: 200px;
+    width: 230px;
+    max-width: 230px;
+  }
+
+  .form-content form button {
+    width: 230px;
+  }
+
+  .map iframe {
+    height: 230px;
+    width: 230px;
   }
   
   /* ----------FOOTER----------- */
