@@ -163,13 +163,23 @@ header {
   font-size: 50px;
   font-weight: 600;
   color: #fff;
+  animation: slideIn 2s ease;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /* ----------OFFER---------- */
 #offer {
   display: flex;
   justify-content: space-between;
-  padding: 10% 10% 5% 10%;
+  padding: 5% 10% 0 10%;
 }
 
 .left p:nth-child(1) {
@@ -202,6 +212,10 @@ header {
 .left button {
   margin: 20px 0;
 }
+.left button a {
+  text-decoration: none;
+  color: #FFF;
+}
 
 .right {
   min-width: 50%;
@@ -221,7 +235,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 10% 10% 5% 10%;
+  padding: 5% 10% 2.5% 10%;
   align-items: center;
 }
 
@@ -291,28 +305,34 @@ header {
 .mail-box {
   position: absolute;
   display: flex;
-  max-width: 80%;
+  min-width: 70%;
   min-height: 20vh;
   background-color: #000000;
   background-image: url(assets/mail-box.jpg);
   background-size: cover;
-  left: 16%;
+  left: 50%;
   top: -40%;
+  transform: translate(-50%, 0);
   text-align: center;
   align-items: center;
-  padding: 20px;
+  /* padding: 20px; */
   margin: 20px;
   border-radius: 5px;
+  box-shadow: 0 0 10px #000000bf;
 }
 
 .mail-box h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #fff;
   font-size: 40px;
   font-weight: 500;
-  margin: 20px 40px;
+  /* margin: 20px 40px; */
 }
 
-.mail-box div {
+/* .mail-box div {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -345,7 +365,7 @@ header {
   border: none;
   outline: none;
   transition: 0.5s ease;
-}
+} */
 
 .footer-content {
   display: flex;
@@ -421,6 +441,23 @@ header {
 .content-3 ul li a:hover {
   color: #d94f48;
   font-weight: 500;
+}
+
+@media (max-width: 1300px) {
+  .left h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-right: 20px;
+    line-height: 50px;
+    max-width: 95%;
+  }
+
+  .left p:nth-child(3) {
+    font-size: 15px;
+    color: #404040;
+    margin-bottom: 20px;
+    max-width: 90%;
+  }
 }
 
 @media (max-width: 1200px) {

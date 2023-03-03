@@ -166,6 +166,7 @@ header {
 
 .header-content p {
   color: #fff;
+  font-weight: 500;
 }
 
 .header-button {
@@ -180,6 +181,11 @@ header {
   background-color: #0000004d;
   border: #f05d56 1px solid;
   transition: 0.5s ease;
+}
+
+.header-button a {
+  text-decoration:  none;
+  color: #FFF;
 }
 
 .header-button:hover {
@@ -216,6 +222,11 @@ header {
 
 .remarkable-right p {
   width: 500px;
+}
+
+.remarkable-right button a {
+  text-decoration:  none;
+  color: #FFF;
 }
 
 .remarkable-left {
@@ -491,29 +502,34 @@ header {
 .mail-box {
   position: absolute;
   display: flex;
-  max-width: 80%;
+  min-width: 70%;
   min-height: 20vh;
   background-color: #000000;
   background-image: url(assets/mail-box.jpg);
   background-size: cover;
-  left: 16%;
+  left: 50%;
   top: -40%;
+  transform: translate(-50%, 0);
   text-align: center;
   align-items: center;
-  padding: 20px;
+  /* padding: 20px; */
   margin: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px #000000bf;
 }
 
 .mail-box h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #fff;
   font-size: 40px;
   font-weight: 500;
-  margin: 20px 40px;
+  /* margin: 20px 40px; */
 }
 
-.mail-box div {
+/* .mail-box div {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -546,7 +562,7 @@ header {
   border: none;
   outline: none;
   transition: 0.5s ease;
-}
+} */
 
 .footer-content {
   display: flex;
