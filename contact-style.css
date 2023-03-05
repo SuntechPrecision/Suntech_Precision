@@ -76,85 +76,6 @@ body {
   background-color: #fff;
 }
 
-/* ----------EXPERIMENT---------- */
-.jt {
-  position: relative;
-  font-size: 20vmin;
-  font-family: 'Poppins', sans-serif;
-  /* text-transform: uppercase; */
-  font-display: swap;
-}
-
-.jt__row {
-  display: block;
-}
-.jt__row:nth-child(1) {
-  clip-path: polygon(0% 75%, 100% 75%, 100% 100%, 0% 100%);
-}
-.jt__row:nth-child(2) {
-  clip-path: polygon(0% 50%, 100% 50%, 100% 75.5%, 0% 75.5%);
-}
-.jt__row:nth-child(3) {
-  clip-path: polygon(0% 25%, 100% 25%, 100% 50.5%, 0% 50.5%);
-}
-.jt__row:nth-child(4) {
-  clip-path: polygon(0% 0%, 100% -10%, 100% 35.5%, 0% 25.5%);
-}
-.jt__row:nth-child(5) {
-  clip-path: polygon(0% -25%, 100% -45%, 100% -9.5%, 0% 0.5%);
-}
-.jt__row:nth-child(6) {
-  clip-path: polygon(0% -50%, 100% -85%, 100% -44.4%, 0% -24.5%);
-}
-
-.jt__row.jt__row--sibling {
-  position: absolute;
-  top: 0;
-  left: 0;
-  user-select: none;
-}
-
-.jt__text {
-  display: block;
-  transform-origin: bottom left;
-  animation: moveIn 4s cubic-bezier(.36,0,.06,0) both;
-}
-.jt__row:nth-child(1) .jt__text {
-  transform: translateY(-0.1em);
-}
-.jt__row:nth-child(2) .jt__text {
-  transform: translateY(-0.3em) scaleY(1.1);
-}
-.jt__row:nth-child(3) .jt__text {
-  transform: translateY(-0.5em) scaleY(1.2) rotate(-1deg);
-}
-.jt__row:nth-child(4) .jt__text {
-  transform: translateY(-0.7em) scaleY(1.3) rotate(-2deg);
-}
-.jt__row:nth-child(5) .jt__text {
-  transform: translateY(-0.9em) scaleY(1.4) rotate(-3deg);
-}
-.jt__row:nth-child(6) .jt__text {
-  transform: translateY(-1.1em) scaleY(1.5) rotate(-4deg);
-}
-
-@keyframes moveIn {
-  50%, 100% { transform: translateY(0em)}
-}
-
-
-
-/* Add class debug on class jt for debugging */
-.debug .jt__row:nth-child(even) {
-  color: black;
-  background: white;
-}
-.debug .jt__row:nth-child(odd) {
-  color: white;
-  background: black;
-}
-
-
 /* ----------HEADER---------- */
 header {
   background-color: #fff;
@@ -242,6 +163,16 @@ header {
   font-size: 50px;
   font-weight: 600;
   color: #fff;
+  animation: slideIn 2s ease;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /* ----------CONTACT INFORMATION---------- */
@@ -612,16 +543,16 @@ header {
   .mail-box {
     max-width: 80%;
     min-height: 20vh;
-    left: 9%;
+    /* left: 9%; */
     top: -40%;
   }
 
-  .mail-box h3 {
+  /* .mail-box h3 {
     color: #fff;
     font-size: 36px;
     font-weight: 500;
     margin: 20px 40px;
-  }
+  } */
 }
 
 @media (max-width: 900px) {
@@ -854,7 +785,7 @@ header {
     background-color: #000000;
     background-image: url(assets/mail-box.jpg);
     background-size: cover;
-    left: 10%;
+    /* left: 10%; */
     top: -45%;
     padding: 10px;
     margin: 20px;
