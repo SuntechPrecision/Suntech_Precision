@@ -76,79 +76,6 @@ body {
   background-color: #fff;
 }
 
-/* ----------EXPERIMENT---------- */
-#logo {
-  position: absolute;
-  top: 25%;
-  left: 9%;
-  width: 300px;
-  /* transform: translate(-50%, -50%); */
-  animation: fill-anim 0.5s ease forwards 3s;
-}
-
-#logo path:nth-child(1) {
-  stroke-dasharray: 300.19;
-  stroke-dashoffset: 300.19;
-  animation: line-anim 2s ease forwards;
-}
-
-#logo path:nth-child(2) {
-  stroke-dasharray: 180.67;
-  stroke-dashoffset: 180.67;
-  animation: line-anim 2s ease forwards 0.2s;
-}
-
-#logo path:nth-child(3) {
-  stroke-dasharray: 278.81;
-  stroke-dashoffset: 278.81;
-  animation: line-anim 2s ease forwards 0.4s;
-}
-
-#logo path:nth-child(4) {
-  stroke-dasharray: 362.64;
-  stroke-dashoffset: 362.64;
-  animation: line-anim 2s ease forwards 0.6s;
-}
-
-#logo path:nth-child(5) {
-  stroke-dasharray: 295.55;
-  stroke-dashoffset: 295.55;
-  animation: line-anim 2s ease forwards 0.8s;
-}
-
-#logo path:nth-child(6) {
-  stroke-dasharray: 266.96;
-  stroke-dashoffset: 266.96;
-  animation: line-anim 2s ease forwards 1s;
-}
-
-#logo path:nth-child(7) {
-  stroke-dasharray: 220.68;
-  stroke-dashoffset: 220.68;
-  animation: line-anim 2s ease forwards 1.2s;
-}
-
-#logo path:nth-child(8) {
-  stroke-dasharray: 289.54;
-  stroke-dashoffset: 289.54;
-  animation: line-anim 2s ease forwards 1.4s;
-}
-
-@keyframes line-anim {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes fill-anim {
-  from {
-    fill: transparent;
-  }
-  to {
-    fill: white;
-  }
-}
-
 /* ----------HEADER---------- */
 header {
   background-color: #fff;
@@ -236,6 +163,16 @@ header {
   font-size: 50px;
   font-weight: 600;
   color: #fff;
+  animation: slideIn 2s ease;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /* ----------PRODUCT BODY---------- */
@@ -557,7 +494,7 @@ header {
   .mail-box {
     max-width: 80%;
     min-height: 20vh;
-    left: 9%;
+    /* left: 9%; */
     top: -40%;
   }
 
@@ -702,7 +639,7 @@ header {
     background-color: #000000;
     background-image: url(assets/mail-box.jpg);
     background-size: cover;
-    left: 10%;
+    /* left: 10%; */
     top: -45%;
     padding: 10px;
     margin: 20px;

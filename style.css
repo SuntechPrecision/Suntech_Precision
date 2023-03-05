@@ -319,9 +319,9 @@ header {
   transform: perspective(500px) translateZ(50px);
 }
 
-.card .back h4 {
-  color: #fff;
-  font-size: 14px;
+.card .back img {
+  width: 100%;
+  border-radius: 8px;
   transform: perspective(500px) translateZ(50px);
 }
 
@@ -415,11 +415,11 @@ header {
   color: #fff;
 }
 
-.timeline-date {
+/* .timeline-date {
   font-size: 16px;
   color: #ff6058;
   margin: 6px 0 15px;
-}
+} */
 
 .timeline-content {
   background-color: #fff;
@@ -431,6 +431,14 @@ header {
 .timeline-content h3 {
   font-size: 24px;
   font-weight: 400;
+}
+
+.timeline-content i {
+  font-size: 24px;
+  background-color: #ff605840;
+  color: #ff6058;
+  padding: 8px;
+  border-radius: 4px;
 }
 
 .timeline-content p {
@@ -722,8 +730,9 @@ header {
   .mail-box {
     max-width: 80%;
     min-height: 200px;
-    left: 10%;
+    /* left: 10%; */
     top: -65%;
+
   }
 
   .mail-box h3 {
@@ -908,7 +917,7 @@ header {
     background-color: #000000;
     background-image: url(assets/mail-box.jpg);
     background-size: cover;
-    left: 10%;
+    /* left: 10%; */
     top: -45%;
     padding: 10px;
     margin: 20px;
