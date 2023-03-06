@@ -221,34 +221,24 @@ header {
 .right {
   margin: 75px 0 0 10px;
   min-width: 50%;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* grid-template-columns: repeat(10, 1fr);
   gap: 10px;
   grid-auto-rows: 80px;
   grid-template-areas:
     "a a a a b b b b"
     "a a a a b b b b"
     "c c c c c c c c"
-    "c c c c c c c c";
+    "c c c c c c c c"; */
 }
 
-.right img:nth-child(1) {
-  grid-area: a;
-  margin-right: 10px;
+.right img {
+  margin: 10px;
   max-width: 225px;
   object-fit: cover;
-}
-.right img:nth-child(2) {
-  grid-area: b;
-  /* margin-top: 50px; */
-  max-width: 225px;
-  object-fit: cover;
-}
-.right img:nth-child(3) {
-  grid-area: c;
-  margin-right: 10px;
-  max-width: 500px;
-  object-fit: cover;
+  border-radius: 10px;
 }
 
 /* ----------SKILLS---------- */
@@ -261,34 +251,28 @@ header {
 }
 
 .skills-left {
-  margin: 75px 0 0 10px;
+  /* margin: 75px 0 0 10px; */
   min-width: 50%;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* grid-template-columns: repeat(10, 1fr);
   gap: 5px;
   grid-auto-rows: 160px;
   grid-template-areas:
     "a a a a a a a a"
     "a a a a a a a a"
     "c c c c b b b b"
-    "c c c c b b b b";
+    "c c c c b b b b"; */
 }
 
-.skills-left img:nth-child(1) {
-  grid-area: a;
-  max-width: 500px;
-  object-fit: cover;
-}
-.skills-left img:nth-child(2) {
-  grid-area: b;
+.skills-left img {
   max-width: 225px;
   object-fit: cover;
+  border-radius: 10px;
+  margin: 10px;
 }
-.skills-left img:nth-child(3) {
-  grid-area: c;
-  max-width: 225px;
-  object-fit: cover;
-}
+
 
 .skills-right {
   padding: 50px;
@@ -308,6 +292,110 @@ header {
   font-size: 15px;
   color: #404040;
 }
+
+#chart {
+  display: flex;
+  flex-direction: row;
+}
+
+.chart_div {
+  width: 45vw; height: 300px;
+}
+
+.chart_div {
+  width: 45vw; height: 300px;
+}
+
+table {
+  margin: 2rem 0;
+  padding: 1rem;
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
+  border: solid 1px #fff;
+  background-color: #fff;
+  border-radius: 1rem;
+  position: relative;
+}
+table thead {
+  text-align: left;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+table thead th,
+table thead td {
+  padding: 1rem;
+  font-size: 90%;
+  border-bottom: solid 2px #fff;
+}
+table thead th {
+  border: solid 1px #fff;
+  background-color: rgba(238, 238, 238, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 0.5rem;
+}
+/* @media screen and (max-width: 600px) {
+  table thead tr {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+  }
+  table thead th {
+    backdrop-filter: blur(0px);
+    background-color: transparent;
+    border-color: transparent;
+  }
+  table thead th,
+table thead td {
+    padding: 1rem 0 1rem 1rem;
+    display: inline-block;
+    font-size: 80%;
+  }
+} */
+table tbody th,
+table tbody td {
+  border-top: solid 1px #fff;
+  border-bottom: solid 1px #fff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: left;
+}
+table tbody th {
+  background-color: #eee;
+}
+table tbody tr:hover th,
+table tbody tr:hover td {
+  box-shadow: inset 0 0 0 2px white;
+  background-color: rgba(238, 238, 238, 0.5);
+  color: #ff6058;
+}
+/* @media screen and (max-width: 600px) {
+  table tbody th,
+table tbody td {
+    display: block;
+    text-align: left;
+    transition: all 0.2s ease-in-out;
+  }
+  table tbody td {
+    height: 0;
+    padding: 0 1rem;
+    opacity: 0;
+    overflow: hidden;
+  }
+  table tbody tr:hover th,
+table tbody tr:hover td {
+    height: auto;
+    overflow: visible;
+    opacity: 1;
+    color: violet;
+    background-color: white;
+  }
+  table tbody tr:hover th {
+    background-color: violet;
+    color: white;
+  }
+  table tbody tr:hover td {
+    padding: 0.5rem 1rem;
+  }
+} */
 
 /* ----------OUR TEAM---------- */
 #our-team {
@@ -539,7 +627,7 @@ header {
   .section-p1 {
     padding: 0;
     margin: 0;
-  }  
+  }
 
   /* ----------SKILLS---------- */
   .skills-right h2 {
@@ -547,6 +635,10 @@ header {
     font-weight: 600;
     line-height: 50px;
     margin: 0;
+  }
+
+  #table table {
+    display: none;
   }
 
   /* ----------OUR TEAM---------- */
@@ -719,6 +811,7 @@ header {
   .right {
     max-height: 50%;
     display: flex;
+    flex-direction: row;
   }
   
   .right img {
@@ -750,6 +843,7 @@ header {
   .skills-left {
     min-width: 50%;
     display: flex;
+    flex-direction: row;
   }
   
   .skills-left img {
@@ -758,6 +852,11 @@ header {
     margin: 5px;
     border-radius: 10px;
     object-fit: cover;
+  }
+
+  #chart {
+    display: flex;
+    flex-direction: column;
   }
 
   /* ----------RESPONSIVE FOOTER SECTION FOR SCREEN BELOW 900px----------- */
@@ -909,6 +1008,10 @@ header {
   .skills-right h2 {
     font-size: 36px;
     font-weight: 600;
+  }
+
+  #chart {
+    display: none;
   }
 
   /* ----------OUR TEAM---------- */
