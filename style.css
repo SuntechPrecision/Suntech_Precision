@@ -709,6 +709,10 @@ header {
     padding: 50px;
   }
 
+  .timeline-items::before {
+    height: 83%;
+  }
+
   .timeline-items {
     max-width: 1000px;
     margin: auto;
@@ -891,6 +895,10 @@ header {
     font-size: 14px;
   }
 
+  .timeline-items::before {
+    height: 82%;
+  }
+
   /* ----------RESPONSIVE OUR PARTNER COMPANIES SECTION FOR SCREEN BELOW 900px---------- */
   .partner-heading div {
     left: 40%;
@@ -973,10 +981,14 @@ header {
   }
   .timeline-item:nth-child(odd),
   .timeline-item:nth-child(even) {
-    padding-left: 37px;
+    padding-left: 50px;
   }
   .timeline-dot {
     left: 0px;
+  }
+
+  .timeline-items::before {
+    height: 82%;
   }
 }
 
@@ -1075,6 +1087,15 @@ header {
     font-size: 16px;
     color: #ff6058;
     margin: 6px 0 15px 15px;
+  }
+
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    padding-left: 50px;
+  }
+
+  .timeline-items::before {
+    height: 82%;
   }
 
   /* ----------RESPONSIVE OUR PARTNER COMPANIES SECTION FOR SCREEN BELOW 600px---------- */
@@ -1262,6 +1283,15 @@ header {
     font-size: 16px;
     color: #ff6058;
     margin: 6px 0 15px 15px;
+  }
+
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    padding-left: 50px;
+  }
+
+  .timeline-items::before {
+    height: 82%;
   }
 
   /* ----------RESPONSIVE OUR PARTNER COMPANIES SECTION FOR SCREEN BELOW 600px---------- */
@@ -1532,6 +1562,15 @@ header {
     color: #fff;
     font-size: 14px;
     transform: perspective(500px) translateZ(50px);
+  }
+
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    padding-left: 50px;
+  }
+
+  .timeline-items::before {
+    height: 82%;
   }
 
   /* ----------OUR PARTNER COMPANIES---------- */
@@ -1868,6 +1907,18 @@ header {
     transform: perspective(500px) translateZ(50px);
   }
   /* ----------TIMELINE---------- */
+  .timeline {
+    padding: 20px;
+  }
+
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    padding-left: 50px;
+  }
+
+  .timeline-items::before {
+    height: 82%;
+  }
 
   .timeline-heading h2 {
     margin-top: 0;
