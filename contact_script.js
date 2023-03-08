@@ -15,7 +15,7 @@ submit.addEventListener('submit', (e) => {
         Host: "smtp.elasticemail.com",
         Username: "tanmoytssaha@gmail.com",
         Password: "DCB6F54D465F833A28AEC4425AEF9D7D6D5D",
-        To: 'tanmoysaha@ieee.org',
+        To: 'suntechprecision2017@gmail.com',
         From: "tanmoytssaha@gmail.com",
         Subject: "Sun Tech Precision Contact Form",
         Body: body,
