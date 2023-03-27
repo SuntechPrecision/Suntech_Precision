@@ -79,7 +79,7 @@ body {
 /* ----------HEADER---------- */
 header {
   background-color: #fff;
-  background-image: url(assets/about.jpg);
+  background-image: url(assets/About-us-background.png);
   background-size: cover;
   background-position: center;
 }
@@ -294,22 +294,20 @@ header {
 }
 
 #chart {
-  display: flex;
-  flex-direction: row;
+  display: block;
 }
 
-.chart_div {
-  width: 45vw; height: 300px;
+#chart_div_1 {
+  width: 50vw; 
+  height: 400px;
+  margin-left: 25%;
 }
 
-.chart_div {
-  width: 45vw; height: 300px;
-}
 
 table {
   margin: 2rem 0;
   padding: 1rem;
-  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -5px 20px rgba(5, 3, 3, 0.1);
   border: solid 1px #fff;
   background-color: #fff;
   border-radius: 1rem;
