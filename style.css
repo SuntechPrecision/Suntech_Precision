@@ -297,28 +297,71 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px 100px;
+  padding: 50px 100px;
+  margin: 0 0 50px 0;
 }
 
-.remarkable-right {
-  margin: 50px;
+.remarkable {
+  margin-top: 50px;
 }
 
-.remarkable-right h1 {
-  font-size: 50px;
+.remarkable h1 {
+  font-size: 40px;
   font-weight: 600;
 }
 
-.remarkable-right p {
-  width: 500px;
+.remarkable p {
+  width: 100%;
 }
 
-.remarkable-right button a {
+.remarkable button a {
   text-decoration:  none;
   color: #FFF;
 }
 
-.remarkable-left {
+.remarkable-cards {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  margin: 0;
+}
+
+.remarkable-card {
+  height: 230px;
+  width: 230px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #00000080;
+  transition: 0.3s ease;
+}
+
+.remarkable-card:hover {
+  box-shadow: 10px 10px 20px #00000080;
+}
+
+.remarkable-card img {
+  width: 230px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: 0.3s ease;
+}
+
+.remarkable-card:hover img {
+  transform: scale(1.1);
+  border-radius: 12px;
+}
+
+.remarkable-card p {
+  margin: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+.remarkable-card:hover p {
+  color: #f05d56;
+}
+/* .remarkable-left {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   gap: 10px;
@@ -412,10 +455,40 @@ header img {
   width: 100%;
   border-radius: 8px;
   transform: perspective(500px) translateZ(50px);
+} */
+
+/* ----------SUNTECH HISTORY---------- */
+.suntech-history {
+  background-color: #88B29D;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 90vh;
+  margin-bottom: 25vh;
+}
+
+.left-side {
+  max-width: 60%;
+  padding: 40px;
+}
+.right-side {
+  max-width: 40%;
+}
+
+.right-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.normal a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 500;
 }
 
 /* ----------TIMELINE---------- */
-.timeline {
+/* .timeline {
   background-color: #fff;
   min-height: 100vh;
   padding: 100px 15px;
@@ -438,7 +511,7 @@ header img {
   height: 80%;
   background-color: #ff6058;
   left: calc(50% - 1px);
-}
+} */
 
 /* .line {
   position: absolute;
@@ -468,7 +541,7 @@ header img {
   bottom: 0;
 } */
 
-.timeline-item {
+/* .timeline-item {
   margin-bottom: 40px;
   width: 100%;
   position: relative;
@@ -499,11 +572,10 @@ header img {
 
 .timeline-dot i {
   position: relative;
-  /* left: 25%; */
   top: 20%;
 
   color: #fff;
-}
+} */
 
 /* .timeline-date {
   font-size: 16px;
@@ -511,7 +583,7 @@ header img {
   margin: 6px 0 15px;
 } */
 
-.timeline-content {
+/* .timeline-content {
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
@@ -551,10 +623,10 @@ header img {
 
 .timeline-heading h2 {
   font-weight: 600;
-}
+} */
 
 /* ----------OUR PARTNER COMPANIES---------- */
-.our-partners {
+/* .our-partners {
   margin-bottom: 150px;
 }
 .partner-heading {
@@ -584,7 +656,102 @@ header img {
 .partner-icons div img {
   height: 75px;
   margin: 20px;
+} */
+
+/* ----------HORIZONTAL CARD VIEW---------- */
+/* .horizontal-card-view {
+  display: grid;
+  width: 100%;
+  height: 75vh;
+  padding: 50px 30%;
+  margin-bottom: 200px;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 20px;
+  grid-auto-rows: 100px;
+  grid-template-areas:
+    "a a b b c c"
+    "a a b b c c"
+    "d d e e f f"
+    "d d e e f f"    
 }
+
+.card:nth-child(1) {
+  grid-area: a;
+}
+.card:nth-child(2) {
+  grid-area: b;
+}
+.card:nth-child(3) {
+  grid-area: c;
+}
+.card:nth-child(4) {
+  grid-area: d;
+}
+.card:nth-child(5) {
+  grid-area: e;
+}
+.card:nth-child(6) {
+  grid-area: f;
+}
+
+.card {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  box-shadow: 0 0 10px #d9d9d9;
+  border-radius: 5px;
+}
+
+.card .face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  transition: 0.5s ease-in-out;
+  transform: perspective(500px) rotateY(0deg);
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.card .face.front {
+  background: #fff;
+}
+
+.card:hover .face.front {
+  transform: perspective(500px) rotateY(180deg);
+}
+
+.card .face.back {
+  background: #ff6058;
+  color: #fff;
+  transform: perspective(500px) rotateY(180deg);
+  border-radius: 5px;
+}
+
+.card:hover .face.back {
+  transform: perspective(500px) rotateY(360deg);
+}
+
+.card .back h4 {
+  font-size: 14px;
+  color: white;
+  transform: perspective(500px) translateZ(50px);
+}
+
+.card .front img {
+  width: 150px;
+  border-radius: 8px;
+  transform: perspective(500px) translateZ(50px);
+} */
+
 
 /* ----------FOOTER----------- */
 .footer {
@@ -789,12 +956,16 @@ header img {
   } */
 
   /* ----------RESPONSIVE REMARKABLE SECTION FOR SCREEN BELOW 1200PX---------- */
-  .remarkable-right h1 {
+  /* .remarkable-right h1 {
     line-height: 45px;
+  } */
+
+  .suntech-history {
+    margin-bottom: 30vh;
   }
 
   /* ----------RESPONSIVE TIMELINE SECTION FOR SCREEN BELOW 1200PX---------- */
-  .timeline {
+  /* .timeline {
     min-height: 1000px;
     padding: 50px;
     margin-bottom: 20%;
@@ -815,7 +986,7 @@ header img {
 
   .timeline-content p {
     margin: 0;
-  }
+  } */
 
   /* ----------RESPONSIVE FOOTER SECTION FOR SCREEN BELOW 1200PX----------- */
   .footer {
@@ -824,9 +995,9 @@ header img {
 
   .mail-box {
     max-width: 80%;
-    min-height: 200px;
+    min-height: 150px;
     /* left: 10%; */
-    top: -65%;
+    top: -50%;
 
   }
 
@@ -986,18 +1157,53 @@ header img {
     font-size: 14px;
   }
 
+  .remarkable h1 {
+    font-size: 40px;
+    font-weight: 600;
+    max-width: 90%;
+    line-height: 44px;
+  }
+  
+  .remarkable p {
+    max-width: 90%;
+    
+  }
+
+  .remarkable-card {
+    height: 150px;
+    width: 150px;
+  }
+  
+  .remarkable-card img {
+    width: 150px;
+  }
+
+  .remarkable-card p {
+    font-size: 16px;
+  }
+
   .timeline-items::before {
     height: 82%;
   }
 
+  .suntech-history {
+    background-color: #88B29D;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 120vh;
+    margin-bottom: 25vh;
+  }
+  
+
   /* ----------RESPONSIVE OUR PARTNER COMPANIES SECTION FOR SCREEN BELOW 900px---------- */
-  .partner-heading div {
+  /* .partner-heading div {
     left: 40%;
   }
 
   .partner-icons div img {
     height: 50px;
-  }
+  } */
 
   /* ----------RESPONSIVE FOOTER SECTION FOR SCREEN BELOW 900px----------- */
   .footer {
@@ -1171,6 +1377,15 @@ header img {
 
   .card .back h4 {
     font-size: 10px;
+  }
+
+  .suntech-history {
+    background-color: #88B29D;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 150vh;
+    margin-bottom: 0;
   }
 
   /* ----------TIMELINE---------- */
@@ -1364,6 +1579,22 @@ header img {
     grid-auto-rows: 50px;
   }
 
+  .remarkable-cards {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .remarkable-card {
+    height: 280px;
+    width: 300px;
+  }
+  
+  .remarkable-card img {
+    width: 300px;
+  }
+
   .card {
     width: 100px;
     height: 100px;
@@ -1378,8 +1609,35 @@ header img {
     font-size: 10px;
   }
 
+  .suntech-history {
+    background-color: #88B29D;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 150vh;
+    margin-bottom: 0;
+  }
+
+  .left-side {
+    max-width: 100%;
+    max-height: 70%;
+    min-height: 60%;
+    padding: 20px;
+  }
+
+  .right-side {
+    max-width: 100%;
+    max-height: 40%;
+  }
+  
+  .right-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   /* ----------TIMELINE---------- */
-  .timeline-heading h2 {
+  /* .timeline-heading h2 {
     font-size: 30px;
   }
 
@@ -1396,10 +1654,10 @@ header img {
 
   .timeline-items::before {
     height: 82%;
-  }
+  } */
 
   /* ----------RESPONSIVE OUR PARTNER COMPANIES SECTION FOR SCREEN BELOW 600px---------- */
-  .partner-heading h2 {
+  /* .partner-heading h2 {
     font-size: 30px;
     margin-bottom: 10px;
   }
@@ -1415,7 +1673,7 @@ header img {
 
   .our-partners {
     margin-bottom: 50px;
-  }
+  } */
 
   /* ----------RESPONSIVE FOOTER SECTION FOR SCREEN BELOW 600px----------- */
   .footer {
@@ -1555,10 +1813,35 @@ header img {
     justify-content: center;
     align-items: center;
     padding: 50px 0;
-    /* margin: 0; */
+    margin: 0 0 0 26px;
   }
 
-  .remarkable-right {
+  .remarkable-card {
+    height: 280px;
+    width: 300px;
+  }
+  
+  .remarkable-card img {
+    width: 300px;
+  }
+
+  .remarkable-card p {
+    font-size: 20px;
+    margin: 20px 0 0 20px;
+  }
+
+  .suntech-history {
+    height: 200vh;
+  }
+
+  .left-side {
+    min-height: 70%;
+  }
+  .right-side {
+    max-height: 30%;
+  }
+
+  /* .remarkable-right {
     max-width: 100%;
     margin: 20% 10% 0 10%;
   }
@@ -1680,7 +1963,7 @@ header img {
   }
 
   /* ----------OUR PARTNER COMPANIES---------- */
-  .our-partners {
+  /*.our-partners {
     margin-bottom: 30px;
   }
   .partner-heading {
@@ -1731,7 +2014,7 @@ header img {
 
   .partner-icons div img {
     height: 30px;
-  }
+  } */
 
   /* ----------FOOTER----------- */
   .footer {
@@ -2014,8 +2297,21 @@ header img {
     font-size: 14px;
     transform: perspective(500px) translateZ(50px);
   }
+
+  .suntech-history {
+    margin-top: 100px;
+    height: 160vh;
+  }
+
+  .left-side {
+    min-height: 80%;
+  }
+  .right-side {
+    max-height: 40%;
+  }
+  
   /* ----------TIMELINE---------- */
-  .timeline {
+  /* .timeline {
     padding: 20px;
   }
 
@@ -2032,10 +2328,10 @@ header img {
     margin-top: 0;
     font-size: 25px;
     font-weight: 600;
-  }
+  } */
 
   /* ----------OUR PARTNER COMPANIES---------- */
-  .our-partners {
+  /* .our-partners {
     margin-bottom: 30px;
   }
   .partner-heading {
@@ -2086,7 +2382,7 @@ header img {
 
   .partner-icons div img {
     height: 30px;
-  }
+  } */
 
   /* ----------FOOTER----------- */
   .footer {
@@ -2326,5 +2622,17 @@ header img {
     color: #fff;
     font-size: 12px;
     transform: perspective(500px) translateZ(50px);
+  }
+
+  .suntech-history {
+    margin-top: 100px;
+    height: 170vh;
+  }
+
+  .left-side {
+    min-height: 80%;
+  }
+  .right-side {
+    max-height: 40%;
   }
 }
