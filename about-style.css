@@ -399,14 +399,20 @@ table tbody tr:hover td {
 #certificate {
   margin: 50px 0;
   text-align: center;
+  padding: 0 22.5vw;  
 }
 
 #certificate h2 {
   font-weight: 600;
 }
 
-#certificate img {
-  margin: 50px 0 0 0;
+#certificate div {
+  display: flex;
+  flex-direction: row;
+}
+
+#certificate div img {
+  margin: 50px 10px 0 10px;
   height: 500px;
   border: 10px solid #000000;
   box-shadow:  0 0 10px #00000080;
@@ -657,6 +663,12 @@ table tbody tr:hover td {
     display: none;
   }
 
+  /* ----------CERTIFICATES---------- */
+  #certificate {
+    padding: 0 17.5vw;  
+  }
+
+
   /* ----------OUR TEAM---------- */
   #our-team {
     text-align: center;
@@ -801,6 +813,10 @@ table tbody tr:hover td {
     top: 30%;
     left: 27.5%;
     transform: translate(-50%, -50%);
+  }
+
+  #certificate {
+    padding: 0 10vw;  
   }
 
   /* ----------OFFER---------- */
@@ -964,6 +980,24 @@ table tbody tr:hover td {
     top: 40%;
     left: 15%;
     transform: translate(-50%, -50%);
+  }
+
+  #certificate {
+    padding: 0 10vw;  
+  }
+
+  
+  #certificate div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #certificate div img {
+    margin: 50px 10px 0 10px;
+    height: 400px;
+    border: 10px solid #000000;
+    object-fit: contain;
+    box-shadow:  0 0 10px #00000080;
   }
 
   /* ----------OFFER---------- */
@@ -1589,6 +1623,11 @@ table tbody tr:hover td {
     font-size: 28px;
     font-weight: 600;
     line-height: 36px;
+  }
+
+  
+  #certificate div img {
+    height: 300px;
   }
 
   /* ----------OUR TEAM---------- */
