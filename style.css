@@ -487,6 +487,19 @@ header img {
   font-weight: 500;
 }
 
+.left-side h1 {
+  animation: slideIn 2s ease;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 /* ----------TIMELINE---------- */
 /* .timeline {
   background-color: #fff;

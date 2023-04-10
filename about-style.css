@@ -395,6 +395,24 @@ table tbody tr:hover td {
   }
 } */
 
+/* ----------CERTIFICATES---------- */
+#certificate {
+  margin: 50px 0;
+  text-align: center;
+}
+
+#certificate h2 {
+  font-weight: 600;
+}
+
+#certificate img {
+  margin: 50px 0 0 0;
+  height: 500px;
+  border: 10px solid #000000;
+  box-shadow:  0 0 10px #00000080;
+}
+
+
 /* ----------OUR TEAM---------- */
 #our-team {
   text-align: center;
