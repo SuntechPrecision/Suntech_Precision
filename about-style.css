@@ -218,29 +218,6 @@ header {
   color: #fff;
 }
 
-.right {
-  margin: 0 10px 0 0;
-  min-width: 50%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  /* grid-template-columns: repeat(10, 1fr);
-  gap: 10px;
-  grid-auto-rows: 80px;
-  grid-template-areas:
-    "a a a a b b b b"
-    "a a a a b b b b"
-    "c c c c c c c c"
-    "c c c c c c c c"; */
-}
-
-.right img {
-  margin: 10px;
-  max-width: 225px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
 /* ----------SKILLS---------- */
 #skills {
   display: flex;
@@ -262,7 +239,7 @@ header {
   max-width: 225px;
   object-fit: cover;
   border-radius: 10px;
-  margin: 0 20px 0 0;
+  margin: 20px 20px 0 0;
 }
 
 .skills-right {
@@ -438,8 +415,8 @@ table tbody tr:hover td {
   max-width: 250px;
   transition: 0.5s ease-in-out;
   position: relative;
-  left: 10%;
-  top: 5%;
+  left: 0;
+  top: 0;
 }
 
 .body-container .card:nth-child(8) .imgBx img {
@@ -447,12 +424,17 @@ table tbody tr:hover td {
 }
 
 .body-container .card:nth-child(4) .imgBx img {
-  max-width: 175px;
+  /* max-width: 175px; */
   top: 12.5%;
 }
 
+.body-container .card:nth-child(3) .imgBx img {
+  /* max-width: 175px; */
+  top: 7.5%;
+}
+
 .body-container .card:nth-child(5) .imgBx img {
-  max-width: 175px;
+  /* max-width: 175px; */
   top: 12.5%;
 }
 
@@ -461,7 +443,7 @@ table tbody tr:hover td {
 }
 
 .body-container .card:nth-child(9) .imgBx img {
-  max-width: 175px;
+  /* max-width: 175px; */
   top: 10%;
 }
 
