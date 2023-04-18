@@ -9,10 +9,12 @@
     <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <img src="assets/sliding-background-1.jpg" alt="" class="img-slide slide-active">
         <img src="assets/sliding-background-2.jpg" alt="" class="img-slide">
         <img src="assets/sliding-background-3.jpg" alt="" class="img-slide">
@@ -25,7 +27,6 @@
                 <a href="about.html">About Us</a>
                 <a href="products.html">Products</a>
                 <a href="contact.html">Contact</a>
-                <!-- <button class="normal">Get A Quote</button> -->
             </nav>
             <button class="hamburger">
                 <div class="bar"></div>
@@ -42,17 +43,111 @@
                 <h1>Welcome to<br>Suntech Precision</h1>
                 <p>Our goal is to have a greater number of customers with the best manufacturing solution.</p>
                 <button class="header-button"><a href="contact.html">Contact Us Today</a></button>
-                <!-- </div>
-            <div class="triangle"></div> -->
+                
         </section>
-        <!-- <div class="arrow-left"><i class="fa-solid fa-arrow-left-long"></i></div>
-        <div class="arrow-right"><i class="fa-solid fa-arrow-right-long"></i></div> -->
         <section class="slider-navigation">
             <div class="nav-btn btn-active"></div>
             <div class="nav-btn"></div>
             <div class="nav-btn"></div>
         </section>
-    </header>
+    </header> -->
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="assets/sliding-background-1.jpg" alt="" class="img-slide slide-active">
+                <div class="container">
+                    <div class="navbar-logo">
+                        <a href="index.html"><img src="assets/logo.png" alt=""></a>
+                    </div>
+                    <nav class="navbar">
+                        <a class='active' href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="products.html">Products</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                    <button class="hamburger">
+                        <div class="bar"></div>
+                    </button>
+                    <nav class="mobile-nav">
+                        <a class='active' href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="products.html">Products</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                </div>
+                <section id="header">
+                    <div class="header-content">
+                        <h1>Welcome to<br>Suntech Precision</h1>
+                        <p>Our goal is to have a greater number of customers with the best manufacturing solution.</p>
+                        <button class="header-button"><a href="contact.html">Contact Us Today</a></button>
+
+                </section>
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/sliding-background-2.jpg" alt="" class="img-slide slide-active">
+                <div class="container">
+                    <div class="navbar-logo">
+                        <a href="index.html"><img src="assets/logo.png" alt=""></a>
+                    </div>
+                    <nav class="navbar">
+                        <a class='active' href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="products.html">Products</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                    <button class="hamburger">
+                        <div class="bar"></div>
+                    </button>
+                    <nav class="mobile-nav">
+                        <a class='active' href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="products.html">Products</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                </div>
+                <section id="header">
+                    <div class="header-content">
+                        <h1>Welcome to<br>Suntech Precision</h1>
+                        <p>Our goal is to have a greater number of customers with the best manufacturing solution.</p>
+                        <button class="header-button"><a href="contact.html">Contact Us Today</a></button>
+                </section>
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/sliding-background-3.jpg" alt="" class="img-slide slide-active">
+                <div class="container">
+                    <div class="navbar-logo">
+                        <a href="index.html"><img src="assets/logo.png" alt=""></a>
+                    </div>
+                    <nav class="navbar">
+                        <a class='active' href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="products.html">Products</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                    <button class="hamburger">
+                        <div class="bar"></div>
+                    </button>
+                    <nav class="mobile-nav">
+                        <a class='active' href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="products.html">Products</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                </div>
+                <section id="header">
+                    <div class="header-content">
+                        <h1>Welcome to<br>Suntech Precision</h1>
+                        <p>Our goal is to have a greater number of customers with the best manufacturing solution.</p>
+                        <button class="header-button"><a href="contact.html">Contact Us Today</a></button>
+
+                </section>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
     <section class="remarkable-services">
         <!-- <div class="remarkable-left">
             <div class="card">
@@ -152,13 +247,14 @@
     <section id="certificate">
         <h2>Certificate</h2>
         <div>
-        <img src="assets/certificate.png" alt="">
-        <img src="assets/certificate2.jpg" alt="">
+            <img src="assets/certificate.png" alt="">
+            <img src="assets/certificate2.jpg" alt="">
         </div>
     </section>
     <section id="our-team" class="section-p1">
         <h2>Sun Tech Team</h2>
-        <p>We have top-notch staff members who put in a lot of effort and never give up or put off delivering the products.</p>
+        <p>We have top-notch staff members who put in a lot of effort and never give up or put off
+            delivering the products.</p>
         <div>
             <img src="assets/suntech_team_1.jpg" alt="">
             <img src="assets/suntech_team_2.jpg" alt="">
@@ -326,6 +422,26 @@
         </div>
     </sectoin>
     <script src="script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 
 </html>

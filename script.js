@@ -8,27 +8,27 @@ window.onload = function () {
     });
 
     //JS code for sliding animation
-    const btns = document.querySelectorAll(".nav-btn");
-    const slides = document.querySelectorAll(".img-slide");
+    // const btns = document.querySelectorAll(".nav-btn");
+    // const slides = document.querySelectorAll(".img-slide");
 
-    var sliderNav = function(manual) {
-        btns.forEach((btn)=>{
-            btn.classList.remove("btn-active");
-        });
+    // var sliderNav = function(manual) {
+    //     btns.forEach((btn)=>{
+    //         btn.classList.remove("btn-active");
+    //     });
         
-        slides.forEach((slide)=>{
-            slide.classList.remove("slide-active");
-        });
+    //     slides.forEach((slide)=>{
+    //         slide.classList.remove("slide-active");
+    //     });
 
-        btns[manual].classList.add("btn-active");
-        slides[manual].classList.add("slide-active");
-    }
+    //     btns[manual].classList.add("btn-active");
+    //     slides[manual].classList.add("slide-active");
+    // }
 
-    btns.forEach((btn, i) => {
-        btn.addEventListener("click", ()=>{
-            sliderNav(i);
-        });
-    });
+    // btns.forEach((btn, i) => {
+    //     btn.addEventListener("click", ()=>{
+    //         sliderNav(i);
+    //     });
+    // });
 
     // const leftArrow = document.querySelector(".arrow-left")
     // const rightArrow = document.querySelector(".arrow-right")

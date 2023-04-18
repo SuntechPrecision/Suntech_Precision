@@ -11,6 +11,7 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 h1 {
@@ -73,8 +74,10 @@ button.normal:hover {
 
 body {
   width: 100%;
+  height: 100%;
   background-color: #fff;
 }
+
 
 /* ----------NAVIGATION BAR & HEADER---------- */
 header {
@@ -96,7 +99,7 @@ header img {
 .container {
   width: 100%;
   max-width: 1600px;
-  padding: 30px 0 0 0;
+  padding: 0;
   padding-left: 128px;
   padding-right: 128px;
   justify-content: space-between;
@@ -104,13 +107,40 @@ header img {
   align-items: center;
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navbar-logo {
+  padding: 0;
+  margin: 0;
+}
+
 .navbar-logo a img {
+  position: relative;
   height: 60px;
   width: 60px;
   border-radius: 50%;
   padding: 8px;
   background-color: #fff;
-  margin: 20px 100px;
+  margin: 25px;
 }
 
 .navbar a {
@@ -281,6 +311,7 @@ header img {
   color: #ffffff;
   background-color: #f05d5680;
 }
+
 
 
 
@@ -1095,7 +1126,7 @@ header img {
   }
 }
 
-@media ( px) {
+@media (max-width: 900px) {
   /* ----------RESPONSIVE HEADER SECTION FOR BELOW 900px SCREEN---------- */
   #header {
     height: 600px;
@@ -1159,7 +1190,7 @@ header img {
     z-index: 98;
     background-color: #000000;
     padding-top: 4%;
-    margin-top: 12%;
+    margin-top: 15%;
     border-radius: 10px;
     transition: 0.5s ease;
   }
@@ -1401,7 +1432,7 @@ header img {
   .mobile-nav {
     height: 35%;
     padding-top: 4%;
-    margin-top: 15%;
+    margin-top: 20%;
     border-radius: 10px;
     transition: 0.5s ease;
   }
@@ -1605,6 +1636,7 @@ header img {
     margin: 0 10px;
   }
 }
+
 @media (max-width: 600px) {
   /* ----------RESPONSIVE HEADER SECTION FOR BELOW 600px SCREEN---------- */
   .navbar-logo a img {
@@ -1632,7 +1664,7 @@ header img {
   .mobile-nav {
     height: 35%;
     padding-top: 4%;
-    margin-top: 15%;
+    margin-top: 25%;
     border-radius: 10px;
     transition: 0.5s ease;
   }
@@ -1918,7 +1950,7 @@ header img {
     width: 40%;
     height: 35%;
     padding-top: 4%;
-    margin-top: 17.5%;
+    margin-top: 27.5%;
     border-radius: 10px;
     transition: 0.5s ease;
   }
@@ -2295,6 +2327,7 @@ header img {
   }
 
   .mobile-nav.is-active {
+    top: 5%;
     right: 30%;
   }
 
