@@ -225,6 +225,7 @@ header {
   justify-content: space-between;
   padding: 5% 10%;
   align-items: start;
+  margin: 0;
 }
 
 .skills-left {
@@ -269,103 +270,13 @@ header {
   width: 50vw;
   height: 400px;
   margin-left: 25%;
+  margin-bottom: 10%;
 }
-
-table {
-  margin: 2rem 0;
-  padding: 1rem;
-  box-shadow: 0 -5px 20px rgba(5, 3, 3, 0.1);
-  border: solid 1px #fff;
-  background-color: #fff;
-  border-radius: 1rem;
-  position: relative;
-}
-table thead {
-  text-align: left;
-  width: 100%;
-  position: sticky;
-  top: 0;
-}
-table thead th,
-table thead td {
-  padding: 1rem;
-  font-size: 90%;
-  border-bottom: solid 2px #fff;
-}
-table thead th {
-  border: solid 1px #fff;
-  background-color: rgba(238, 238, 238, 0.5);
-  backdrop-filter: blur(5px);
-  border-radius: 0.5rem;
-}
-/* @media screen and (max-width: 600px) {
-  table thead tr {
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(5px);
-  }
-  table thead th {
-    backdrop-filter: blur(0px);
-    background-color: transparent;
-    border-color: transparent;
-  }
-  table thead th,
-table thead td {
-    padding: 1rem 0 1rem 1rem;
-    display: inline-block;
-    font-size: 80%;
-  }
-} */
-table tbody th,
-table tbody td {
-  border-top: solid 1px #fff;
-  border-bottom: solid 1px #fff;
-  border-radius: 0.5rem;
-  padding: 1rem;
-  text-align: left;
-}
-table tbody th {
-  background-color: #eee;
-}
-table tbody tr:hover th,
-table tbody tr:hover td {
-  box-shadow: inset 0 0 0 2px white;
-  background-color: rgba(238, 238, 238, 0.5);
-  color: #ff6058;
-}
-/* @media screen and (max-width: 600px) {
-  table tbody th,
-table tbody td {
-    display: block;
-    text-align: left;
-    transition: all 0.2s ease-in-out;
-  }
-  table tbody td {
-    height: 0;
-    padding: 0 1rem;
-    opacity: 0;
-    overflow: hidden;
-  }
-  table tbody tr:hover th,
-table tbody tr:hover td {
-    height: auto;
-    overflow: visible;
-    opacity: 1;
-    color: violet;
-    background-color: white;
-  }
-  table tbody tr:hover th {
-    background-color: violet;
-    color: white;
-  }
-  table tbody tr:hover td {
-    padding: 0.5rem 1rem;
-  }
-} */
 
 #product-body {
   width: 100%;
-  padding: 100px;
-  text-align: center;
+  padding: 100px 100px 0px 100px;
+  text-align: start;
 }
 
 #product-body h2 {
@@ -423,13 +334,23 @@ table tbody tr:hover td {
   max-width: 175px;
 }
 
+.body-container .card:nth-child(1) .instrumentsImg img {
+  top: 10%;
+  max-width: 160px;
+}
+
+.body-container .card:nth-child(2) .imgBx img {
+  top: 10%;
+  max-width: 200px;
+}
+
 .body-container .card:nth-child(4) .imgBx img {
   /* max-width: 175px; */
   top: 12.5%;
 }
 
-.body-container .card:nth-child(3) .imgBx img {
-  /* max-width: 175px; */
+.body-container .card:nth-child(3) .instrumentsImg img {
+  max-width: 175px;
   top: 7.5%;
 }
 
@@ -439,7 +360,8 @@ table tbody tr:hover td {
 }
 
 .body-container .card:nth-child(6) .imgBx img {
-  max-width: 175px;
+  top: 10%;
+  max-width: 200px;
 }
 
 .body-container .card:nth-child(9) .imgBx img {
@@ -447,11 +369,23 @@ table tbody tr:hover td {
   top: 10%;
 }
 
-.body-container .card:nth-child(8):hover .imgBx img {
+.body-container .card:nth-child(1):hover .instrumentsImg img {
+  top: 5%;
+  max-width: 100px;
+}
+
+.body-container .card:nth-child(3):hover .instrumentsImg img {
+  top: 5%;
+  max-width: 100px;
+}
+
+.body-container .card:nth-child(5):hover .imgBx img {
+  top: 25%;
   max-width: 100px;
 }
 
 .body-container .card:nth-child(6):hover .imgBx img {
+  top: 10%;
   max-width: 100px;
 }
 
@@ -483,54 +417,6 @@ table tbody tr:hover td {
   font-size: 12px;
 }
 
-/* ----------CERTIFICATES---------- */
-#certificate {
-  margin: 50px 0;
-  text-align: center;
-  padding: 0 22.5vw;
-}
-
-#certificate h2 {
-  font-weight: 600;
-}
-
-#certificate div {
-  display: flex;
-  flex-direction: row;
-}
-
-#certificate div img {
-  margin: 50px 10px 0 10px;
-  height: 500px;
-  border: 10px solid #000000;
-  box-shadow: 0 0 10px #00000080;
-}
-
-/* ----------OUR TEAM---------- */
-#our-team {
-  text-align: center;
-  margin-bottom: 100px;
-}
-
-#our-team h2 {
-  font-weight: 600;
-}
-
-#our-team p {
-  font-size: 14px;
-  color: #404040;
-}
-
-#our-team div {
-  display: flex;
-  justify-content: space-between;
-  margin: 5% 0;
-}
-
-#our-team div img {
-  width: 47.5%;
-  border-radius: 10px;
-}
 
 /* ----------FOOTER----------- */
 .footer {
@@ -556,7 +442,6 @@ table tbody tr:hover td {
   transform: translate(-50%, 0);
   text-align: center;
   align-items: center;
-  /* padding: 20px; */
   margin: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px #000000bf;
@@ -570,43 +455,7 @@ table tbody tr:hover td {
   color: #fff;
   font-size: 40px;
   font-weight: 500;
-  /* margin: 20px 40px; */
 }
-
-/* .mail-box div {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  align-content: center;
-  margin: 20px 40px;
-}
-
-.mail-box div input {
-  font-size: 16px;
-  font-weight: 400;
-  width: 300px;
-  height: 40px;
-  padding: 10px 20px;
-  color: #000000;
-  border: none;
-  outline: none;
-  border-radius: 2px 0 0 2px;
-}
-
-.subscribe-button {
-  font-size: 16px;
-  font-weight: 400;
-  padding: 5px 20px;
-  height: 40px;
-  color: #fff;
-  background-color: #ff6058;
-  border-radius: 0 2px 2px 0;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  transition: 0.5s ease;
-} */
 
 .footer-content {
   display: flex;
@@ -711,6 +560,27 @@ table tbody tr:hover td {
     max-width: 1200px;
   }
 
+  #product-body {
+    padding: 0 5%;
+  }
+
+  .body-container .card .content {
+    padding: 10px;
+    justify-content: start;
+    overflow: hidden;
+  }
+
+  .body-container .card .content h3 {
+    margin-bottom: 5px;
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .body-container .card .content p {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+
   /* ----------OFFER---------- */
   #offer {
     display: flex;
@@ -745,33 +615,14 @@ table tbody tr:hover td {
     line-height: 50px;
     margin: 0;
   }
-
-  #table table {
-    display: none;
+  
+  #chart_div_1 {
+    width: 50vw;
+    height: 400px;
+    margin-left: 10%;
+    margin-bottom: 10%;
   }
 
-  /* ----------CERTIFICATES---------- */
-  #certificate {
-    padding: 0 17.5vw;
-  }
-
-  /* ----------OUR TEAM---------- */
-  #our-team {
-    text-align: center;
-    margin-bottom: 100px;
-    padding: 40px 80px;
-  }
-
-  #our-team h2 {
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 50px;
-  }
-
-  #our-team div img {
-    width: 46%;
-    border-radius: 10px;
-  }
 
   /* ----------FOOTER---------- */
   .mail-box {
@@ -779,6 +630,49 @@ table tbody tr:hover td {
     min-height: 20vh;
     /* left: 9%; */
     top: -40%;
+  }
+}
+
+@media (max-width: 992px) {
+  .body-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .body-container .card {
+    width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .body-container .card {
+    max-width: 300px;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .body-container .card .imgBx {
+    position: relative;
+  }
+  .body-container .card .imgBx,
+  .body-container .card:hover .imgBx {
+    width: 100%;
+    height: 300px;
+    left: 0;
+    padding: 25px;
+  }
+
+  .body-container .card .imgBx img,
+  .body-container .card:hover .imgBx img {
+    max-width: 100%;
+    background-size: contain;
+  }
+
+  .body-container .card .content {
+    position: relative;
+    width: 100%;
   }
 }
 
@@ -908,10 +802,10 @@ table tbody tr:hover td {
   /* ----------OFFER---------- */
   #offer {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: space-between;
     padding: 5%;
-    align-items: center;
+    align-items: start;
   }
 
   .left {
@@ -974,6 +868,13 @@ table tbody tr:hover td {
   #chart {
     display: flex;
     flex-direction: column;
+  }
+
+  #chart_div_1 {
+    width: 50vw;
+    height: 200px;
+    margin-left: 1%;
+    margin-bottom: 25%;
   }
 
   /* ----------RESPONSIVE FOOTER SECTION FOR SCREEN BELOW 900px----------- */
@@ -1087,7 +988,7 @@ table tbody tr:hover td {
   /* ----------OFFER---------- */
   #offer {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: space-between;
     padding: 5%;
     margin-top: 5%;
