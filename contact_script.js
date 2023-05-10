@@ -30,27 +30,6 @@ submit.addEventListener('submit', (e) => {
     );
 })
 
-// emailSubscribe.addEventListener('normal', (e)=> {
-//     e.preventDefault();
-//     Email.send({
-//         Host: "smtp.elasticemail.com",
-//         Username: "tanmoytssaha@gmail.com",
-//         Password: "DCB6F54D465F833A28AEC4425AEF9D7D6D5D",
-//         To: 'tanmoysaha@ieee.org',
-//         From: "tanmoytssaha@gmail.com",
-//         Subject: "Sun Tech Precision subscription mail",
-//         Body: subscriptionMail + " <br>This email address wants to subscribe your email newsletter.<br>Please this email to your email newsletter.",
-//     }).then(
-//         (message) => {
-//             if(message == 'OK'){
-//                 alert("Email has been sent successfully");
-//             } else {
-//                 alert(message)
-//             }
-//         }
-//     );
-// })
-
 window.onload = function() {
     const menu_btn = document.querySelector('.hamburger');
     const menu_list = document.querySelector('.mobile-nav');
