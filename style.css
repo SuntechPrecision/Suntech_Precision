@@ -78,7 +78,6 @@ body {
   background-color: #fff;
 }
 
-
 /* ----------NAVIGATION BAR & HEADER---------- */
 header {
   background-color: #f05d56;
@@ -312,7 +311,6 @@ header img {
   background-color: #f05d5680;
 }
 
-
 /* ----------REMARKABLE SECTION---------- */
 .remarkable-services {
   display: flex;
@@ -347,7 +345,7 @@ header img {
   margin: 0;
 }
 
-.remarkable-cards a{
+.remarkable-cards a {
   text-decoration: none;
 }
 
@@ -388,47 +386,6 @@ header img {
 
 .remarkable-card:hover p {
   color: #f05d56;
-}
-
-.product-cards {
-  display: none;
-  width: 100%;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 0px;
-  grid-template-areas:
-  "a b c";
-}
-
-.product-cards.active-cards {
-  display: grid;
-}
-
-.product-cards .card {
-  max-height:300px;
-  max-width: 300px;
-  margin: 25px;
-  padding: 10px;
-  box-shadow: 0 0 10px #00000080;
-  border-radius: 10px;
-  overflow: hidden;
-  transition:  0.3s ease;
-}
-
-.product-cards .card:hover {
-  box-shadow: 0 0 20px #00000080;
-}
-
-.product-cards .card img {
-  width: 260px;
-  height: 260px;
-  object-fit: fill;
-  border-radius: 10px;
-  transition:  0.3s ease;
-}
-
-.product-cards .card:hover img {
-  transform: scale(1.2);
 }
 
 /* ----------SUNTECH HISTORY---------- */
@@ -640,45 +597,6 @@ header img {
   font-weight: 500;
 }
 
-@media (max-width: 768px) {
-  .remarkable-services {
-    padding: 50px;
-    margin: 0 0 50px 0;
-  }
-
-  .product-cards {
-    margin: 0;
-  }
-
-  .product-cards .card {
-    max-width: 250px;
-    flex-direction: column;
-    height: auto;
-  }
-
-  .product-cards .card .imgBx {
-    position: relative;
-  }
-  .product-cards .card .imgBx,
-  .product-cards .card:hover .imgBx {
-    width: 100%;
-    height: 300px;
-    left: 0;
-    padding: 25px;
-  }
-
-  .product-cards .card .imgBx img,
-  .product-cards .card:hover .imgBx img {
-    max-width: 100%;
-    background-size: contain;
-  }
-
-  .product-cards .card .content {
-    position: relative;
-    width: 100%;
-  }
-}
-
 @media (max-width: 1200px) {
   /* ----------RESPONSIVE HEADER SECTION FOR BELOW 1200PX SCREEN---------- */
   .container {
@@ -717,16 +635,6 @@ header img {
     font-size: 70px;
     font-weight: 800;
     color: #fff;
-  }
-
-  .product-cards .card {
-    max-height:250px;
-    max-width: 250px;
-  }
-  
-  .product-cards .card img {
-    width: 200px;
-    height: 200px;
   }
 
   /* ----------RESPONSIVE REMARKABLE SECTION FOR SCREEN BELOW 1200PX---------- */
@@ -908,22 +816,6 @@ header img {
     font-size: 16px;
   }
 
-  .product-cards {
-    grid-template-areas:
-    "a b";
-    margin: 0;
-  }
-
-  .product-cards .card {
-    max-height: 250px;
-    max-width: 250px;
-  }
-  
-  .product-cards .card img {
-    width: 230px;
-    height: 230px;
-  }
-
   .timeline-items::before {
     height: 82%;
   }
@@ -1004,27 +896,6 @@ header img {
   }
 }
 
-@media (max-width: 767px) {
-  .timeline-items::before {
-    left: 18px;
-  }
-  .timeline-item:nth-child(odd) {
-    padding-right: 0;
-    text-align: left;
-  }
-  .timeline-item:nth-child(odd),
-  .timeline-item:nth-child(even) {
-    padding-left: 50px;
-  }
-  .timeline-dot {
-    left: 0px;
-  }
-
-  .timeline-items::before {
-    height: 82%;
-  }
-}
-
 @media (max-width: 700px) {
   /* ----------RESPONSIVE HEADER SECTION FOR BELOW 700px SCREEN---------- */
   .navbar-logo {
@@ -1078,29 +949,6 @@ header img {
     padding: 30px;
   }
 
-  .remarkable-right {
-    margin: 30px;
-    max-width: 45%;
-  }
-
-  .remarkable-right h1 {
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 30px;
-  }
-
-  .remarkable-right p {
-    width: 100%;
-    font-size: 14px;
-  }
-
-  .remarkable-left {
-    max-width: 45%;
-    grid-template-columns: repeat(10, 1fr);
-    gap: 10px;
-    grid-auto-rows: 65px;
-  }
-
   .suntech-history {
     background-color: #88b29d;
     display: flex;
@@ -1125,45 +973,6 @@ header img {
     border: 10px solid #000000;
     object-fit: contain;
     box-shadow: 0 0 10px #00000080;
-  }
-
-  /* ----------TIMELINE---------- */
-  .timeline-heading h2 {
-    font-size: 30px;
-  }
-
-  .timeline-date {
-    font-size: 16px;
-    color: #ff6058;
-    margin: 6px 0 15px 15px;
-  }
-
-  .timeline-item:nth-child(odd),
-  .timeline-item:nth-child(even) {
-    padding-left: 50px;
-  }
-
-  .timeline-items::before {
-    height: 82%;
-  }
-
-  /* ----------RESPONSIVE OUR PARTNER COMPANIES SECTION FOR SCREEN BELOW 600px---------- */
-  .partner-heading h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
-
-  .partner-heading div {
-    left: 30%;
-  }
-
-  .partner-icons div img {
-    height: 40px;
-    margin: 10px;
-  }
-
-  .our-partners {
-    margin-bottom: 50px;
   }
 
   /* ----------RESPONSIVE FOOTER SECTION FOR SCREEN BELOW 600px----------- */
@@ -1262,48 +1071,9 @@ header img {
     font-size: 40px;
   }
 
-  .product-cards {
-    grid-template-areas:
-    "a";
-    margin: 0;
-  }
-
-  .product-cards .card {
-    max-height:250px;
-    width: 250px;
-  }
-  
-  .product-cards .card img {
-    width: 230px;
-    height: 230px;
-  }
-
   /* ----------RESPONSIVE REMARKABLE SECTION FOR SCREEN BELOW 600px---------- */
   .remarkable-services {
     padding: 30px;
-  }
-
-  .remarkable-right {
-    margin: 30px;
-    max-width: 45%;
-  }
-
-  .remarkable-right h1 {
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 30px;
-  }
-
-  .remarkable-right p {
-    width: 100%;
-    font-size: 14px;
-  }
-
-  .remarkable-left {
-    max-width: 45%;
-    grid-template-columns: repeat(10, 1fr);
-    gap: 10px;
-    grid-auto-rows: 50px;
   }
 
   .remarkable-cards {
@@ -1320,20 +1090,6 @@ header img {
 
   .remarkable-card img {
     width: 300px;
-  }
-
-  .card {
-    width: 100px;
-    height: 100px;
-    border-radius: 5px;
-  }
-
-  .card .face h4 {
-    font-size: 10px;
-  }
-
-  .card .back h4 {
-    font-size: 10px;
   }
 
   .suntech-history {
